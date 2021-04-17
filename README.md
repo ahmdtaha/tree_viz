@@ -16,15 +16,16 @@ The CompactTreeViz takes a tree-description and draws the tree in a png file. Th
 run `Main.java` from package `src.tree_viz`. This is an eclipse project.
 
 ### TODO
-* Update readme file with credits
-* Write the story of this project
-* Add credits to readme file
+* Explain how to support other trees, i.e., treeDescription
+* Resize the node (width and height) dynamically based on its content.
 
 
 ### Contributor list
 While TreeViz is a one man job, I borrowed somethings from others and I want to make this clear.
 1. I use the tree format propose by [Jim Blackler](http://jimblackler.net/treefun/index.html). This allows TreeViz to support any tree structure and not just binary trees.
 2. Since this tool is about visualization only, I borrowed the BST and the BTree implementations from [mvyas85](https://github.com/mvyas85/Binary-Tree/blob/master/src/BST/BinarySearchTree.java) and [phishman3579](https://github.com/phishman3579/java-algorithms-implementation/blob/master/src/com/jwetherell/algorithms/data_structures/BTree.java), respectively.
+
+I hope other people contribute to the TreeViz and improve it. Thus, pull requests are welcomed.
 
 
 ### Release History
