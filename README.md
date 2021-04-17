@@ -33,4 +33,4 @@ While TreeViz is a one man job, I borrowed somethings from others and I want to 
 
 ### Misc Notes
 
-* I developed TreeViz while I was TAing CMSC420 with Jason Filippou. CMSC420 is an advanced data-structures class with a lot of projects about various trees (BST, AVL, BTree, QuadTree). TreeViz is **not** part of the course requirements; I developed TreeViz to help me debug my implementation. TreeViz helped me visualize my trees after every insertion/deletion, i.e., find bugs faster.  
+* I developed TreeViz while TAing CMSC420 with Jason Filippou. CMSC420 is an advanced data-structures class with a lot of projects about various trees (BST, AVL, BTree, QuadTree). TreeViz is **not** part of the course requirements; I developed TreeViz to help me debug my implementation. TreeViz helped me visualize my trees after every insertion/deletion, i.e., find bugs faster.  
