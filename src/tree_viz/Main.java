@@ -8,8 +8,6 @@ import trees.BTree;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hello World");
 		
 		BST bst = new BST();
 		bst.insert(10);
@@ -24,8 +22,8 @@ public class Main {
 		CompactTreeViz comTreeViz = new CompactTreeViz();
 		
 		comTreeViz.drawBinaryTreeToFile(bstDescription, "./bst");
-		
-		
+		bst.insert(50);
+		comTreeViz.drawBinaryTreeToFile(bst.treeDescription(false), "./bst_insert50");
 		
 		BTree<Integer> btree = new BTree<Integer>();		
 		for (int i : new int[]{10, 20, 30,40,50,60,25,5} )
