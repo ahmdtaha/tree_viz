@@ -6,6 +6,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Deque;
 
+import tree_viz.VizableTree;
+
 
 /**
  * B-tree is a tree data structure that keeps data sorted and allows searches,
@@ -22,7 +24,7 @@ import java.util.Deque;
 
 
 // Credit : https://github.com/phishman3579/java-algorithms-implementation/blob/master/src/com/jwetherell/algorithms/data_structures/BTree.java
-public class BTree<T extends Comparable<T>>{
+public class BTree<T extends Comparable<T>> implements VizableTree{
 
     // Default to 2-3 Tree
     private int minKeySize = 1;

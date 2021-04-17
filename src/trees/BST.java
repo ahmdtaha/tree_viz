@@ -6,6 +6,8 @@ import java.util.ArrayList;
  *  Java Program to Implement Binary Search Tree
  */
  import java.util.Scanner;
+
+import tree_viz.VizableTree;
  
  /* Class BSTNode */
  // Credit : https://github.com/mvyas85/Binary-Tree/blob/master/src/BST/BinarySearchTree.java
@@ -65,7 +67,7 @@ import java.util.ArrayList;
  }
  // https://github.com/mvyas85/Binary-Tree/blob/master/src/BST/BinarySearchTree.java
  /* Class BST */
-public class BST
+public class BST implements VizableTree
  {
      private BSTNode root;
  

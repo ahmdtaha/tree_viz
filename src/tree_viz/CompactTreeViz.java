@@ -72,8 +72,10 @@ public class CompactTreeViz {
             }
         }
     }
+    
+    private VizableTree vizTree;
     private final int nodeSize = 40;
-
+    
     private int nodeWidth;
     private int nodeHeight;
     private int minSiblingSpacing;
@@ -92,16 +94,18 @@ public class CompactTreeViz {
     private int treeP;
 
 
-    public CompactTreeViz()
+    public CompactTreeViz(VizableTree vizTree)
     {
+    	this.vizTree = vizTree;
         //TODO: figure a way to set node size (width and height) automatically
         nodeWidth = nodeSize + 50;
         nodeHeight = nodeSize + 50;
         minSiblingSpacing = 20;
         parentChildSpacing = nodeHeight + 30;
     }
-    public CompactTreeViz(int nodeWidth,int nodeHeight,int siblingSpacing)
+    public CompactTreeViz(VizableTree vizTree,int nodeWidth,int nodeHeight,int siblingSpacing)
     {
+    	this.vizTree = vizTree;
         this.nodeWidth = nodeWidth;
         this.nodeHeight = nodeHeight;
         this.minSiblingSpacing = siblingSpacing;
@@ -238,12 +242,14 @@ public class CompactTreeViz {
 
     }
 
-    public void drawBinaryTreeToFile(ArrayList<String> vizTreeDescription, String filename) {
+    public void drawBinaryTreeToFile(String filename) {
+    	ArrayList<String> vizTreeDescription = vizTree.treeDescription(false);
         treeP = 2;
         drawTreeToFile(vizTreeDescription, filename);
     }
 
-    public void drawBTreeToFile(ArrayList<String> vizTreeDescription, int p, String filename) {
+    public void drawBTreeToFile(int p, String filename) {
+    	ArrayList<String> vizTreeDescription = vizTree.treeDescription(false);
         treeP = p;
         drawTreeToFile(vizTreeDescription, filename);
     }

@@ -13,7 +13,7 @@ The CompactTreeViz takes a tree-description and draws the tree in a png file. Th
 
 
 ###  Usage
-run `Main.java` from package `src.tree_viz`. This is an eclipse project.
+run `Main.java` from package `src.tree_viz`. This is an eclipse project. After running `Main.java`, png files are created in the project root directory.
 
 ### TODO
 * Explain how to support other trees, i.e., treeDescription

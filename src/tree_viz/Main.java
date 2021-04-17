@@ -1,7 +1,5 @@
 package tree_viz;
 
-import java.util.ArrayList;
-
 import trees.BST;
 import trees.BTree;
 
@@ -17,21 +15,21 @@ public class Main {
 		bst.insert(7);
 		bst.insert(2);
 		
-		ArrayList<String> bstDescription = bst.treeDescription(false);
 		
-		CompactTreeViz comTreeViz = new CompactTreeViz();
+		CompactTreeViz bstTreeViz = new CompactTreeViz(bst);
 		
-		comTreeViz.drawBinaryTreeToFile(bstDescription, "./bst");
+		bstTreeViz.drawBinaryTreeToFile("./bst");
 		bst.insert(50);
-		comTreeViz.drawBinaryTreeToFile(bst.treeDescription(false), "./bst_insert50");
+		bstTreeViz.drawBinaryTreeToFile("./bst_insert50");
 		
 		BTree<Integer> btree = new BTree<Integer>();		
 		for (int i : new int[]{10, 20, 30,40,50,60,25,5} )
 			btree.add(i);
 		
 		System.out.println(btree.toString());
-		ArrayList<String> btreeDescription = btree.treeDescription(false);
-		comTreeViz.drawBTreeToFile(btreeDescription, btree.getTreeOrder(), "./btree");
+		
+		CompactTreeViz bTreeViz = new CompactTreeViz(btree);
+		bTreeViz.drawBTreeToFile(btree.getTreeOrder(), "./btree");
 	}
 
 }
